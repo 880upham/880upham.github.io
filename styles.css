@@ -1,10 +1,12 @@
 @font-face {
   font-family: BratsyFont;
-  src: url("bratsy_script/Bratsy Script Demo.otf") format("opentype");
+  src: url("bratsy_script/Bratsy Script Demo.otf") format("opentype"),
+       url("bratsy_script/Bratsy Script Demo.ttf")  format("truetype"); /* Safari, Android, iOS */
 }
 @font-face {
   font-family: GentyFont;
-  src: url("genty/GentyDemo-Regular.otf") format("opentype");
+  src: url("genty/GentyDemo-Regular.otf") format("opentype"),
+       url("genty/GentyDemo-Regular.ttf")  format("truetype"); /* Safari, Android, iOS */
 }
 
 body {
