@@ -53,6 +53,17 @@ body {
     z-index: 2;
 }
 
+.elementToFadeInAndOut {
+    width:200px;
+    height: 200px;
+    background: red;
+    -webkit-animation: fadeinout 4s linear forwards;
+    animation: fadeinout 4s linear forwards;
+    opacity: 0;
+}
+
+
+}
 
 @keyframes fade-in {
     from {
@@ -63,6 +74,7 @@ body {
     }
 }
 
+
 .white-point {
     width: 10px;
     height: 10px;
@@ -72,4 +84,13 @@ body {
     z-index: 1;
     transform: scale(0); /* Start with no size */
     transition: transform 0.5s ease; /* Add a CSS transition for scaling */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    #text-container {
+        font-size: 3em; /* Adjust font size for mobile */
+    }
+
+    /* Add any other mobile-specific styles here */
 }
