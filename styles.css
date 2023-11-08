@@ -1,88 +1,73 @@
+@font-face {
+  font-family: BratsyFont;
+  src: url("bratsy_script/Bratsy Script Demo.otf") format("opentype");
+}
+@font-face {
+  font-family: GentyFont;
+  src: url("genty/GentyDemo-Regular.otf") format("opentype");
+}
+
 body {
     margin: 0;
     overflow: hidden;
+    position: relative;
 }
 
-.landing-container {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+
+.black-screen {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
-
-h1 {
-    font-size: 3em;
-    font-weight: bold;
-    font-family: 'Helvetica', sans-serif;
-    color: #fff;
-    opacity: 0;
-    transition: opacity 1s;
-}
-
-h1.fade-in {
-    animation: fadeIn 3s ease-in-out forwards;
-}
-
-h1.fade-out {
-    animation: fadeOut 3s ease-in-out forwards;
-}
-
-button {
-    background: #FF69B4;
-    color: #fff;
-    font-weight: bold;
-    padding: 15px 30px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background 0.3s;
-    font-family: 'Helvetica', sans-serif;
-    opacity: 0;
-}
-
-button.fade-in-button {
-    animation: fadeIn 3s ease-in-out forwards;
-}
-
-.button.delay-4s {
-    animation-delay: 4s;
-}
-
-.background-gif {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    background: url('psych.gif') no-repeat center center fixed;
-    background-size: cover;
-    opacity: 0;
-    animation: fadeIn 5s ease-in-out 4s forwards;
+    z-index: 1;
 }
 
-@keyframes fadeIn {
-    0% {
+#text-container {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 6em;
+    font-weight: bold;
+    font-family: 'GentyFont', sans-serif;
+    background: linear-gradient(to left,
+                    violet,
+                    indigo,
+                    blue,
+                    green,
+                    yellow,
+                    orange,
+                    red);
+            -webkit-background-clip: text;
+            color: transparent;
+    opacity: 0; /* Start with 0 opacity */
+    animation: fade-in 1s ease 1s forwards; /* CSS animation */
+    z-index: 2;
+}
+
+
+@keyframes fade-in {
+    from {
         opacity: 0;
     }
-    100% {
+    to {
         opacity: 1;
     }
 }
 
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
+.white-point {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    transform: scale(0); /* Start with no size */
+    transition: transform 0.5s ease; /* Add a CSS transition for scaling */
 }
