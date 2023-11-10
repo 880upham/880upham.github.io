@@ -9,27 +9,62 @@
        url("genty/GentyDemo-Regular.ttf")  format("truetype"); /* Safari, Android, iOS */
 }
 
-body {
-    margin: 0;
-    overflow: hidden;
-    position: relative;
-}
 
-.black-screen {
+body {
+    overflow: hidden;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: black;
+    
+     
+    transition: transform 0.5s ease; /* Add a CSS transition for scaling */
+}
+.content {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
+}
+
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+#background-container {
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+}
+/*
+.background{
+    position: absolute;
+    background-image: url("assets/blackhole.gif");
+    width: 100%;
+    height: 100%;
+    transform: scale(300);
+}*/
+
+#background-container.image1{
+    background-image: url('assets/colorblob.gif');
+    transform: scale(1);
+}
+
+#background-container.image2{
+    background-image: url('assets/purplegalaxy.gif');
+    transform: scale(1);
 }
 
 #text-container {
+    height: 200px;
     color: white;
     padding: 20px;
     text-align: center;
@@ -49,20 +84,21 @@ body {
     opacity: 0;
     z-index: 2;
     transition: opacity .5s; /* Add a CSS transition for opacity */
+    animation: glow 1s ease-in-out infinite alternate;
 }
 
 
-.white-point {
-    width: 10px;
-    height: 10px;
-    background-image: url("assets/blackhole.gif");
-    /*background-color: white;*/
-    border-radius: 50%;
-    position: absolute;
-    z-index: 1;
-    transform: scale(0); /* Start with no size */
-    transition: transform 0.5s ease; /* Add a CSS transition for scaling */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #e60073, 0 0 8px #e60073, 0 0 10px #e60073, 0 0 12px #e60073, 0 0 14px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 4px #fff, 0 0 6px #ff4da6, 0 0 8px #ff4da6, 0 0 10px #ff4da6, 0 0 12px #ff4da6, 0 0 14px #ff4da6, 0 0 16px #ff4da6;
+  }
 }
+
+
 
 @keyframes fadeInOut {
     0% {
@@ -103,3 +139,5 @@ body {
 
     /* Add any other mobile-specific styles here */
 }
+
+
