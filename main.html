@@ -2,9 +2,87 @@
 <html>
 <head>
     <title>Get Fucked</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+
+        .background{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            transition: background-image 1s ease-in-out;
+            background-image: url("assets/purplegalaxy.gif");
+            z-index: -1;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+            font-family: 'Helvetica', sans-serif;
+            font-size: 2em;
+        }
+
+        #chatbot-container {
+            text-align: center;
+            z-index: 1;
+        }
+
+        #oracle-form {
+            margin-top: 20px;
+            max-width: 80%; /* Set a maximum width for the form */
+            margin: auto;
+        }
+
+        #question {
+            width: 75%; /* Make the input take the full width of its container */
+            padding: 10px; /* Add padding for better spacing */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+            font-size: 16px;
+        }
+
+        #submit-btn {
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            width: 100%;
+            height: 50px;
+            font-size: 18px;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: #3498db; /* Set the initial background color */
+            color: #fff; /* Set the initial text color */
+            border: none; /* Remove the default button border */
+            cursor: pointer; /* Change the cursor to a pointer on hover for better UX */
+            transition: background-color 0.3s ease; /* Add a smooth transition effect */
+        }
+
+        #submit-btn:hover {
+            background-color: #2980b9; /* Change the background color on hover */
+        }
+        
+    </style>
 </head>
 <body>
-    <h1>The Deets</h1>
-    <!-- Add your content here -->
+    <div class="background"></div>
+    <div id="chatbot-container">
+    <h2>Welcome to the Get Fucked Concierge</h2>
+        <form id="oracle-form">
+            <input type="text" id="question" placeholder="Ask anything...">
+            <button type="submit">Ask</button>
+        </form>
+        <div id="answer"></div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="chatbot.js"></script>
 </body>
 </html>
