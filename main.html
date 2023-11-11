@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <style>
+        @font-face {
+          font-family: GentyFont;
+          src: url("genty/GentyDemo-Regular.otf") format("opentype"),
+               url("genty/GentyDemo-Regular.ttf")  format("truetype"); /* Safari, Android, iOS */
+        }
+        h2 {
+            font-family: 'GentyFont', sans-serif;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 2em;
+            animation: glow 1s ease-in-out infinite alternate;
+            margin-bottom: 0; /* Remove the bottom margin */
+        }
 
         .background{
             position: fixed;
@@ -48,6 +62,13 @@
             font-size: 16px;
         }
 
+        #answer {
+            width: 75%;
+            padding: 10px;
+            font-size: 1em;
+            margin: auto; /* Center the answer horizontally */
+        }
+
         #submit-btn {
             display: block;
             margin: auto;
@@ -68,7 +89,19 @@
         #submit-btn:hover {
             background-color: #2980b9; /* Change the background color on hover */
         }
-        
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #e60073, 0 0 4px #e60073, 0 0 5px #e60073, 0 0 6px #e60073, 0 0 7px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #ff4da6, 0 0 4px #ff4da6, 0 0 5px #ff4da6, 0 0 6px #ff4da6, 0 0 7px #ff4da6, 0 0 8px #ff4da6;
+    }
+}
+
+
+
     </style>
 </head>
 <body>

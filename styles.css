@@ -107,6 +107,7 @@ html {
     -webkit-background-clip: text;
     color: transparent;
     opacity: 0;
+    margin-bottom: 0; /* Remove the bottom margin */
     z-index: 2;
     transition: opacity .5s; /* Add a CSS transition for opacity */
     animation: glow 1s ease-in-out infinite alternate;
