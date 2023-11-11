@@ -198,6 +198,11 @@ button:hover {
         font-size: 3em; /* Adjust font size for mobile */
     }
 
+    .typewriter {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+        line-height: 1.4; /* Adjust line height for smaller screens */
+    }
+
     /* Add any other mobile-specific styles here */
 }
 

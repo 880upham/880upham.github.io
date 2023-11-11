@@ -23,13 +23,13 @@ document.addEventListener("DOMContentLoaded", async function() {
         const line = lines[lineIndex];
 
         for (let i = 0; i < line.length; i++) {
-            const char = line.charAt(i);
-            const span = document.createElement("span");
-            span.textContent = char;
-            span.style.animationDelay = `${(lineIndex * 1) + i * 0.1}s`;
-            textElement.appendChild(span);
-        }
-        await sleep(3)
+        const char = line.charAt(i);
+        const span = document.createElement("span");
+        span.textContent = char;
+        span.style.animationDelay = `${(lineIndex * 0.5) + i * 0.05}s`; // Adjust the values for faster animation
+        textElement.appendChild(span);
+    }
+        await sleep(2)
 
         if (lineIndex < lines.length - 1) {
             textElement.appendChild(document.createElement("br"));
@@ -43,6 +43,14 @@ document.addEventListener("DOMContentLoaded", async function() {
         buttonsContainer.style.opacity = "1";
     }, 10);
     buttonsContainer.style.display = "flex";
+    // Add click event listeners to the buttons for redirection
+    document.getElementById("button1").addEventListener("click", function() {
+        window.location.href = "main.html"; // Replace with the actual URL
+    });
+
+    document.getElementById("button2").addEventListener("click", function() {
+        window.location.href = "main.html"; // Replace with the actual URL
+    });
     
 
 });
