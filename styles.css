@@ -10,11 +10,10 @@
 }
 
 body {
-  overflow: hidden;
+  overflow: auto;
   width: 100%;
   height: 100%;
   background-color: black;
-
   margin: 0px;
   transition: transform 0.5s ease; /* Add a CSS transition for scaling */
 }
@@ -28,21 +27,29 @@ body {
 }
 
 .typewriter {
-  overflow: hidden;
   white-space: nowrap;
   text-align: center;
-  /* font-size: 2em; */
-  font-size: 16px;
   font-size: 4vw;
   font-weight: bold;
   color: white;
   line-height: 1.6;
   font-family: "Helvetica", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
+  letter-spacing: 1px; /* Increase letter spacing for a modern look */
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+  /* animation: glow 1s ease-in-out infinite alternate; */
+
 }
 
 #typewriter-text span {
   opacity: 0;
   animation: fadeInTypewriter 0.8s forwards;
+  /* background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  
+  text-shadow : horizontal-shadow vertical-shadow blur color, horizontal-shadow vertical-shadow blur color;
+
 }
 
 @keyframes fadeInTypewriter {
@@ -91,6 +98,7 @@ html {
 #text-container {
   color: white;
   padding: 20px;
+  margin-top: 20px;
   text-align: center;
   font-size: 12vw;
   font-weight: bold;
@@ -118,6 +126,7 @@ html {
   z-index: 1;
   opacity: 0; /* Set initial opacity to 0 */
   transition: opacity 1s ease; /* Add transition for opacity */
+  margin-bottom: 20px;
 }
 .buttons a {
   text-decoration: none;
