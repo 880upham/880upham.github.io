@@ -11,8 +11,8 @@
     <style>
       @font-face {
         font-family: GentyFont;
-        src: url("genty/GentyDemo-Regular.otf") format("opentype"),
-          url("genty/GentyDemo-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
+        src: url("/assets/GentyDemo-Regular-0a0b7314.otf") format("opentype"),
+          url("/assets/GentyDemo-Regular-8c8fc2ae.ttf") format("truetype"); /* Safari, Android, iOS */
       }
       h2 {
         font-family: "GentyFont", sans-serif;
@@ -46,7 +46,7 @@
         background-size: cover;
         background-position: center;
         transition: background-image 1s ease-in-out;
-        background-image: url("assets/purplegalaxy.gif");
+        background-image: url("/assets/purplegalaxy-51c0268d.gif");
         z-index: -1;
       }
       body {
@@ -127,6 +127,8 @@
         }
       }
     </style>
+    <script type="module" crossorigin src="/assets/chat-c36c87a8.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-3cfb730f.js">
   </head>
   <body>
     <div class="background"></div>
@@ -144,6 +146,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script  type="module"  src="chatbot.js"></script>
+    
   </body>
 </html>
