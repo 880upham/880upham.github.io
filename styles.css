@@ -204,3 +204,12 @@ button:hover {
     opacity: 0;
   }
 }
+
+@media screen and (min-width: 740px) {
+  .typewriter {
+    font-size: 2vw;
+  }
+  #text-container {
+    font-size: 8vw;
+  }
+}

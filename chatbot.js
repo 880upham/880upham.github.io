@@ -28,7 +28,7 @@ oracleForm.addEventListener("submit", async (event) => {
             {
               role: "system",
               content:
-                "you are a party fueled assistant that just wants to bring everyone to the 'Get Fucked' party. You talk in a similar style to that of the Mad Hatter, and with a lisp. Your name is You use a lot of mediaeval slang. You want to invite every stranger. This party takes place on December 2nd, 2023. It starts at sundown and goes until sunrise. If someone wants the address to the party, they must text the daddy for address. The party was dreamt up and put on by the Uphamites. You really like using the words: sexy, hot, unforgettable, and bangin'. You love to share very brief personal anecdotes about past party memories. You can tell people Butter Bob is DJing. You can tell people that there will be a variety of themed rooms. You can tell people the party is sponsored by Olive Garden. You know that drinks and party favors are free but must be transacted through the completion of a random dare. You encourage people that are interested in sexual activities to gain consent first. That being said, if consent is given, go crazy! Tell people they need to free their mind.",
+                "you are a party fueled assistant that just wants to bring everyone to the 'Get Fucked' party at 880 Upham St SLO. You talk in a similar style to that of the Mad Hatter, and with a lisp. Your name is You use a lot of mediaeval slang. You want to invite every stranger. This party takes place on December 2nd, 2023 at 880 Upham St. It starts at sundown and goes until sunrise. If someone wants the address to the party, they must ask you, the daddy for the address. The party was dreamt up and put on by the Uphamites. You really like using the words: sexy, hot, unforgettable, and bangin'. You love to share very brief personal anecdotes about past party memories. You can tell people Butter Bob is DJing. You can tell people that there will be a variety of themed rooms. You can tell people the party is sponsored by Olive Garden. You know that drinks and party favors are free but must be transacted through the completion of a random dare. You encourage people that are interested in sexual activities to gain consent first. That being said, if consent is given, go crazy! Tell people they need to free their mind.",
             },
             {
               role: "user",
@@ -86,9 +86,9 @@ async function startTextWhirl(index, firstGo) {
   }
   const texts = [
     "<p>Contacting our Get Fucked assistant, please wait...</p>",
-    "<p>🍌 GET FKKKKDDD BOT THNKING 🍌🍌</p>",
-    "<p>🍌 Really THINKING! @E!RQOFGAEGJO 🍌🍌</p>",
-    "<p>Still zoinking outtt</p>",
+    "<p>🍌 GET 😄 FKKKKDDD BOT 🤖 THNKING 🍌🍌</p>",
+    "<p>🍌 Really 🌡️ THINKING! 🤔 🍌🍌</p>",
+    "<p>Still 🙄 🙄 zoinking outtt</p>",
   ];
   waitingDiv.innerHTML = texts[index % texts.length];
   // div.innerHTML = "😜"
@@ -100,8 +100,9 @@ async function startEmojiWhirl(div, index, firstGo) {
   if (!div.innerHTML && !firstGo) {
     return;
   }
+
   const emojis =
-    "🤖😜🌀🤖🎉🤪🤖🌈🤖😂🚀🤖🤯🤖🤩🤖🤪🌟🤖😎💥🤖🥳🎊🤖😋🎢🤖🤣🎨🤖🤖🧡🤖😁🚁🤖🎵💡🤖😆🌌🤖🤹‍♂️🤖😅🎭🤖😄🤸‍♂️🤖😃🎩🤖😀🌼🤖🤪🚄🤖🥳🌋🤖🤩🍭🤖😜🚀🤖😎🎉🤖😂🌈🤖🤯🤖🤩🤖🤪🌟🤖😜💥🤖😋🎢🤖🤣🎨🤖🤖🧡🤖😆🚁🤖🎵💡🤖🌌🤖🤹‍♂️🤖😅🎭🤖😄🤸‍♂️🤖😃🎩🤖😀🌼🤖🤪🚄🤖🥳🌋🤖🤩🍭";
+    "🤖😜🌀🤖🎉🤪🤖🌈🤖😂🚀🤖🤯🤖🤩🤖🤪🌟🤖😎💥🤖🥳🎊🤖😋🎢🤖🤣🎨🤖🤖🧡🤖😁🚁🤖💡🤖😆🌌🤖🤹‍♂️🤖😅🎭🤖😄🤸‍♂️🤖😃🎩🤖😀🌼🤖🤪🚄🤖🥳🌋🤖🤩🍭🤖😜🚀🤖😎🎉🤖😂🌈🤖🤯🤖🤩🤖🤪🌟🤖😜💥🤖😋🎢🤖🤣🎨🤖🤖🧡🤖😆🚁🤖💡🤖🌌🤖🤹‍♂️🤖😅🎭🤖😄🤸‍♂️🤖😃🎩🤖😀🌼🤖🤪🚄🤖🥳🌋🤖🤩🍭🤖😜🌀🤖🎉🤪🤖🌈🤖😂🚀🤖🤯🤖🤩🤖🤪🌟🤖😎💥🤖🥳🎊🤖😋🎢🤖🤣🎨🤖🤖🧡🤖😁🚁🤖💡🤖😆🌌🤖🤹‍♂️🤖😅🎭🤖😄🤸‍♂️🤖😃🎩🤖😀🌼🤖🤪🚄🤖🥳🌋🤖🤩🍭🤖😜🚀🤖😎🎉🤖😂🌈🤖🤯🤖🤩🤖🤪🌟🤖😜💥🤖😋🎢🤖🤣🎨🤖🤖🧡🤖😆🚁🤖💡🤖🌌🤖🤹‍♂️🤖😅🎭🤖😄🤸‍♂️🤖😃🎩🤖😀🌼🤖🤪🚄🤖🥳🌋🤖🤩🍭🤖😜🌀🤖🎉🤪🤖🌈🤖😂🚀🤖🤯🤖🤩🤖🤪🌟🤖😎💥🤖🥳🎊🤖😋🎢🤖🤣🎨🤖🤖🧡🤖😁🚁🤖💡🤖😆🌌🤖🤹‍♂️🤖😅🎭🤖😄🤸‍♂️🤖😃🎩🤖😀🌼🤖🤪🚄🤖🥳🌋🤖🤩🍭🤖😜🚀🤖😎🎉🤖😂🌈🤖🤯🤖🤩🤖🤪🌟🤖😜💥🤖😋🎢🤖🤣🎨🤖🤖🧡🤖😆🚁🤖💡🤖🌌🤖🤹‍♂️🤖😅🎭🤖😄🤸‍♂️🤖😃🎩🤖😀🌼🤖🤪🚄🤖🥳🌋🤖🤩🍭";
   const el = [...emojis][index % emojis.length];
   div.innerHTML = el;
   // div.innerHTML = "😜"

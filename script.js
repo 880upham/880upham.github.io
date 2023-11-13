@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       span.style.animationDelay = `${lineIndex * 0.5 + i * 0.05}s`; // Adjust the values for faster animation
       textElement.appendChild(span);
     }
-    await sleep(2);
+    await sleep(1.5);
 
     if (lineIndex < lines.length - 1) {
       textElement.appendChild(document.createElement("br"));
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   }
 
   // Add this at the end of your existing script
-  await sleep(4);
+  await sleep(2);
   const buttonsContainer = document.querySelector(".buttons");
   buttonsContainer.style.opacity = "1";
   buttonsContainer.style.display = "flex";
@@ -52,9 +52,9 @@ document.addEventListener("DOMContentLoaded", async function () {
 });
 
 function sleep(d) {
-//   const fast = true;
+    // const fast = true;
   const fast = false;
-  return new Promise((resolve) => setTimeout(resolve, d * fast ? 300 : 1000));
+  return new Promise((resolve) => setTimeout(resolve, d * (fast ? 300 : 1000)));
 }
 async function fadeOutAndIn() {
   const textContainer = document.getElementById("text-container");
