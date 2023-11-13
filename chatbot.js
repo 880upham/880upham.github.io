@@ -20,7 +20,7 @@ oracleForm.addEventListener("submit", async (event) => {
     answerDiv.innerHTML = "";
     let answer = "";
     try {
-      const useApi = false;
+      const useApi = true;
       if (useApi) {
         const response = await openai.chat.completions.create({
           model: "gpt-3.5-turbo",
@@ -81,8 +81,6 @@ async function startWaitingText() {
 }
 
 async function startTextWhirl(index, firstGo) {
-  console.log(`firstGo:`, firstGo);
-  console.log(`index:`, index);
   if (!waitingDiv.innerHTML && !firstGo) {
     return;
   }
