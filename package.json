@@ -1,0 +1,13 @@
+{
+  "name": "880upham.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "repository": "https://github.com/880upham/880upham.github.io.git",
+  "author": "Thomas Rich <tnrich@teselagen.com>",
+  "license": "MIT",
+  "dependencies": {
+    "openai": "^4.17.4",
+    "vite": "^4.5.0"
+  }
+}

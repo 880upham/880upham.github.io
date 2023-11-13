@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", async function() {
     const textContainer = document.getElementById("text-container");
     const backgroundContainer = document.getElementById('background-container');
