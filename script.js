@@ -39,18 +39,16 @@ document.addEventListener("DOMContentLoaded", async function() {
     // Add this at the end of your existing script
     await sleep(3)
     const buttonsContainer = document.querySelector(".buttons");
-    setTimeout(() => {
-        buttonsContainer.style.opacity = "1";
-    }, 10);
+    buttonsContainer.style.opacity = "1";
     buttonsContainer.style.display = "flex";
     // Add click event listeners to the buttons for redirection
-    document.getElementById("button1").addEventListener("click", function() {
-        window.location.href = "main.html"; // Replace with the actual URL
-    });
+    // document.getElementById("button1").addEventListener("click", function() {
+    //     window.location.href = "main.html"; // Replace with the actual URL
+    // });
 
-    document.getElementById("button2").addEventListener("click", function() {
-        window.location.href = "main.html"; // Replace with the actual URL
-    });
+    // document.getElementById("button2").addEventListener("click", function() {
+    //     window.location.href = "main.html"; // Replace with the actual URL
+    // });
     
 
 });
