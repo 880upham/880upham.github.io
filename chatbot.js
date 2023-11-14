@@ -8,7 +8,7 @@ const waitingEmoji2 = document.getElementById("waitingEmoji2");
 const waitingEmoji3 = document.getElementById("waitingEmoji3");
 
 const openai = new OpenAI({
-  apiKey: "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",
+  apiKey: "sk-1ZaLSnwFDDoeJqsoD"+"ly1T3BlbkFJcfu1ZBx3q45cZGF9EIAl",
   dangerouslyAllowBrowser: true,
 });
 

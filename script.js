@@ -2,7 +2,16 @@ document.addEventListener("DOMContentLoaded", async function () {
   const textContainer = document.getElementById("text-container");
   const backgroundContainer = document.getElementById("background-container");
   const textElement = document.getElementById("typewriter-text");
-  const lines = textElement.innerHTML.split("<br>");
+  const lines = [
+    "🌈 In 👄📥 the whimsical land 🇦🇲 of Upham, ",
+    "a 👙 celebration 🙌 🎉 awaits",
+    "🕝🕑🕞 on 🔛 December 2nd ✌️ ",
+    "🌄 Unveil the secret location 📍 🗺️ by ",
+    "😡 asking AI daddy 😍 4 💦 addy and ",
+    "🤡 bring 🤲 a stranger 👭 ",
+    "along 💁🔚 for ❓ the fun 🈷️💦🔣🍣 😄🚀👫 ",
+    "Are you 👀 ready? 🌺 🎁🎊💃",
+  ];
   textElement.innerHTML = "";
 
   backgroundContainer.classList.toggle("image1");
@@ -23,7 +32,8 @@ document.addEventListener("DOMContentLoaded", async function () {
     const line = lines[lineIndex];
 
     for (let i = 0; i < line.length; i++) {
-      const char = line.charAt(i);
+      const char = line[i];
+      console.log(`char:`, char);
       const span = document.createElement("span");
       span.textContent = char;
       span.style.animationDelay = `${lineIndex * 0.5 + i * 0.05}s`; // Adjust the values for faster animation
@@ -52,7 +62,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 });
 
 function sleep(d) {
-    const fast = true;
+  const fast = true;
   // const fast = false;
   return new Promise((resolve) => setTimeout(resolve, d * (fast ? 300 : 1000)));
 }
