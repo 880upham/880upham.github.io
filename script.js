@@ -52,8 +52,8 @@ document.addEventListener("DOMContentLoaded", async function () {
 });
 
 function sleep(d) {
-    // const fast = true;
-  const fast = false;
+    const fast = true;
+  // const fast = false;
   return new Promise((resolve) => setTimeout(resolve, d * (fast ? 300 : 1000)));
 }
 async function fadeOutAndIn() {

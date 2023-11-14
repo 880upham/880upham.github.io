@@ -27,6 +27,7 @@ body {
 }
 
 .typewriter {
+  z-index: 1;
   white-space: nowrap;
   text-align: center;
   font-size: 4vw;
