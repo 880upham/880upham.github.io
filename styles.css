@@ -29,7 +29,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+.zoink {
 
+  z-index: 1;
+  
+}
 .typewriter {
   z-index: 1;
   white-space: nowrap;
