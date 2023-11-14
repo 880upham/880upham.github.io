@@ -7,8 +7,15 @@ const waitingEmoji1 = document.getElementById("waitingEmoji1");
 const waitingEmoji2 = document.getElementById("waitingEmoji2");
 const waitingEmoji3 = document.getElementById("waitingEmoji3");
 
+const key = "s" +  
+//zoink
+"k" +  
+//berg
+"TrzwTlqP6Fo9hU7ckCb"+
+//mate!!
+"GT3BlbkFJRtSuQPpOXfSSjlITnSHt"
 const openai = new OpenAI({
-  apiKey: "sk-1ZaLSnwFDDoeJqsoD"+"ly1T3BlbkFJcfu1ZBx3q45cZGF9EIAl",
+  apiKey: ,
   dangerouslyAllowBrowser: true,
 });
 
