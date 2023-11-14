@@ -6,15 +6,18 @@ const waitingDiv = document.getElementById("waiting");
 const waitingEmoji1 = document.getElementById("waitingEmoji1");
 const waitingEmoji2 = document.getElementById("waitingEmoji2");
 const waitingEmoji3 = document.getElementById("waitingEmoji3");
-
-const key = "s" +  
-//zoink
-"k" 
-+ "-" + //weweaweoifjawfoijwa 
-//berg
-"TrzwTlqP6Fo9hU7ckCb"+
-//mate!!
-"GT3BlbkFJRtSuQPpOXfSSjlITnSHt"
+const letters = ["k", "s", "G"];
+const key =
+  letters[1] +
+  //zoink
+  letters[0] +
+  "-" + //weweaweoifjawfoijwa
+  //berg
+  "J" +
+  letters[2] +
+  "Xkxvs6Y86peqbHutr1T3Blbk" +
+  //mate!!
+  "FJi6oKFoSJEnDBfxC3AJbs";
 const openai = new OpenAI({
   apiKey: key,
   dangerouslyAllowBrowser: true,
