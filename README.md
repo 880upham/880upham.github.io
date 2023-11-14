@@ -8,7 +8,7 @@ npm install
 
 ## run local dev server
 ```
-npm run vite
+npm run start
 ```
 
 
