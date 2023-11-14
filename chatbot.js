@@ -9,7 +9,8 @@ const waitingEmoji3 = document.getElementById("waitingEmoji3");
 
 const key = "s" +  
 //zoink
-"k" +  
+"k" + 
++ "-" //weweaweoifjawfoijwa 
 //berg
 "TrzwTlqP6Fo9hU7ckCb"+
 //mate!!
