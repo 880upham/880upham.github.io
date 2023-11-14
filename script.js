@@ -2,17 +2,17 @@ document.addEventListener("DOMContentLoaded", async function () {
   const textContainer = document.getElementById("text-container");
   const backgroundContainer = document.getElementById("background-container");
   const textElement = document.getElementById("typewriter-text");
-  const lines = [
-    "🌈 In 👄📥 the whimsical land 🇦🇲 of Upham, ",
-    "a 👙 celebration 🙌 🎉 awaits",
-    "🕝🕑🕞 on 🔛 December 2nd ✌️ ",
-    "🌄 Unveil the secret location 📍 🗺️ by ",
-    "😡 asking AI daddy 😍 4 💦 addy and ",
-    "🤡 bring 🤲 a stranger 👭 ",
-    "along 💁🔚 for ❓ the fun 🈷️💦🔣🍣 😄🚀👫 ",
-    "Are you 👀 ready? 🌺 🎁🎊💃",
-  ];
-  textElement.innerHTML = "";
+  // const lines = [
+  //   "🌈 In 👄📥 the whimsical land 🇦🇲 of Upham, ",
+  //   "a 👙 celebration 🙌 🎉 awaits",
+  //   "🕝🕑🕞 on 🔛 December 2nd ✌️ ",
+  //   "🌄 Unveil the secret location 📍 🗺️ by ",
+  //   "😡 asking AI daddy 😍 4 💦 addy and ",
+  //   "🤡 bring 🤲 a stranger 👭 ",
+  //   "along 💁🔚 for ❓ the fun 🈷️💦🔣🍣 😄🚀👫 ",
+  //   "Are you 👀 ready? 🌺 🎁🎊💃",
+  // ];
+  // textElement.innerHTML = "";
 
   backgroundContainer.classList.toggle("image1");
   await sleep(1);
@@ -28,22 +28,25 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   await sleep(1);
 
-  for (let lineIndex = 0; lineIndex < lines.length; lineIndex++) {
-    const line = lines[lineIndex];
-
-    for (let i = 0; i < line.length; i++) {
-      const char = line[i];
-      console.log(`char:`, char);
-      const span = document.createElement("span");
-      span.innerHTML = `${char}`;
-      span.style.animationDelay = `${lineIndex * 0.5 + i * 0.05}s`; // Adjust the values for faster animation
-      textElement.appendChild(span);
-    }
+  for (let lineIndex = 1; lineIndex < 9; lineIndex++) {
+    const el = document.querySelector("#z-" + lineIndex)
+    el.style.display = "block"
+    el.style.opacity = 1
+    // const line = lines[lineIndex];
+    // line.
+    // for (let i = 0; i < line.length; i++) {
+    //   const char = line[i];
+    //   console.log(`char:`, char);
+    //   const span = document.createElement("span");
+    //   span.innerHTML = `${char}`;
+    //   span.style.animationDelay = `${lineIndex * 0.5 + i * 0.05}s`; // Adjust the values for faster animation
+    //   textElement.appendChild(span);
+    // }
     await sleep(1.5);
 
-    if (lineIndex < lines.length - 1) {
-      textElement.appendChild(document.createElement("br"));
-    }
+    // if (lineIndex < lines.length - 1) {
+    //   textElement.appendChild(document.createElement("br"));
+    // }
   }
 
   // Add this at the end of your existing script
