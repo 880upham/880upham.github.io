@@ -101,6 +101,9 @@ async function startTextWhirl(index, firstGo) {
     "<p>🍌 GET 😄 FKKKKDDD BOT 🤖 THNKING 🍌🍌</p>",
     "<p>🍌 Really 🌡️ THINKING! 🤔 🍌🍌</p>",
     "<p>Still 🙄 🙄 zoinking outtt</p>",
+    "<p>Woaaaaah 💫 im feeling a bit 😵 dizzy</p>",
+    "<p>*THUD*... owwwww 🤕</p>",
+    "<p>Bot will 💤 wake up 💤 soon... i hope ⏰</p>",
   ];
   waitingDiv.innerHTML = texts[index % texts.length];
   // div.innerHTML = "😜"
