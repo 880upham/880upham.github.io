@@ -32,7 +32,7 @@ body {
 .zoink {
 
   z-index: 1;
-  
+
 }
 .typewriter {
   z-index: 1;
@@ -42,7 +42,7 @@ body {
   font-weight: bold;
   color: white;
   line-height: 1.6;
-  font-family: "Helvetica";
+  /* font-family: "Helvetica"; */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
   letter-spacing: 1px; /* Increase letter spacing for a modern look */
   transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
