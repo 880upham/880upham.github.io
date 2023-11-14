@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       const char = line[i];
       console.log(`char:`, char);
       const span = document.createElement("span");
-      span.textContent = char;
+      span.textContent = `${char}`;
       span.style.animationDelay = `${lineIndex * 0.5 + i * 0.05}s`; // Adjust the values for faster animation
       textElement.appendChild(span);
     }
