@@ -6,6 +6,10 @@
   "repository": "https://github.com/880upham/880upham.github.io.git",
   "author": "Thomas Rich <tnrich@teselagen.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
   "dependencies": {
     "openai": "^4.17.4",
     "vite": "^4.5.0"

@@ -1,16 +1,22 @@
 # 880upham.github.io
 
-To run locally
+## install deps
 ```
 npm install 
-vite
 ```
 
 
-To build the site for github pages:
+## run local dev server
 ```
-vite build
+npm run vite
 ```
 
-> 
-Then commit to the main branch (this will update the gh-pages)
+
+### To build the site for github pages (before you commit):
+```
+npm run build
+```
+
+
+### To deploy to github pages:
+commit to the main branch (this will update the gh-pages)
