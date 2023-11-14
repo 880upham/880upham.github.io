@@ -56,8 +56,9 @@ oracleForm.addEventListener("submit", async (event) => {
         answer = response.choices[0].message.content.trim();
       } else {
         await sleep(10);
-        answer =
+        /*answer =
           "Well daiery me, you've landed in the right place for a right wild and indulgent time! We have a magnifik shindig comin' up this weekend that'll make your toes curl and your head spin with delirial glee.\n\nIntroduicin' the legendary Get Fucked party, happenin' on December 2nd, 2023 from sundown 'til the breakits o' dawn. Awix me thyself, and I shall anglice ya.\n\n";
+      */
       }
 
       answerDiv.innerHTML = `<p><strong>GetFkkkdBot 5000:</strong> ${answer}<br><br>Love, GetFkkkdBot 5000</p>`;
