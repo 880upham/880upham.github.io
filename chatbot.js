@@ -15,7 +15,7 @@ const key = "s" +
 //mate!!
 "GT3BlbkFJRtSuQPpOXfSSjlITnSHt"
 const openai = new OpenAI({
-  apiKey: ,
+  apiKey: key,
   dangerouslyAllowBrowser: true,
 });
 
