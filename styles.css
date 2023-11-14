@@ -51,6 +51,7 @@ body {
 .typewriter div {
   opacity: 0;
   display: none;
+  transition: opacity 0.5s; /* Add a CSS transition for opacity */
 }
 
 #typewriter-text span {
@@ -156,7 +157,7 @@ button {
   margin-top: 20px; /* Adjust margin as needed */
   z-index: 100; /* Adjust the z-index as needed */
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .green-button {
