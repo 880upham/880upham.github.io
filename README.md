@@ -1,5 +1,7 @@
 # 880upham.github.io
 
+Commiting new builds seemingly removes custom domain. Go to Settigns, Pages, add Custom Domain (getfucked.party)
+
 ## install deps
 ```
 npm install 
