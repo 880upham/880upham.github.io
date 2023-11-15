@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   }
 
   // Add this at the end of your existing script
-  await sleep(2);
+  await sleep(1);
   const buttonsContainer = document.querySelector(".buttons");
   buttonsContainer.style.opacity = "1";
   buttonsContainer.style.display = "flex";
